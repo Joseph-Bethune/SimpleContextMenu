@@ -1,0 +1,36 @@
+body {
+    background: #1b1a1a;
+}
+
+.clickTarget {
+    padding: 100px;
+    margin: 5px;
+    color: white;
+    background: black;
+}
+
+.context-menu {
+    margin: 0;
+    font-family:"Open Sans", sans-serif;
+    position: fixed;
+    z-index: 10000;
+    width: 150px;
+    background: #1b1a1a;
+    transform-origin: top left;
+    transform: scale(0);    
+}
+
+.context-menu .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: #eee;
+}
+
+.context-menu .item:hover {
+    background: #555;
+}
+
+.context-menu hr {
+    margin: 2px 0px;
+    border-bottom: #555;
+}
