@@ -1,4 +1,4 @@
-import * as CM from "./contextMenu.js";
+import * as CM from "./src/contextMenu.js";
 
 // test code
 //*
@@ -39,8 +39,8 @@ function isChildOfClass(htmlElement, className) {
 }
 
 function isDescendedFromElement(childElement, parentElement, includeSelf = true) {
-    
-    if (childElement != null) {        
+
+    if (childElement != null) {
 
         let currentTarget = includeSelf ? childElement : childElement.parentNode;
         let found = false;
@@ -105,7 +105,7 @@ const DefaultContextMenu = new CM.MenuPrefab(
     new CM.Button("copy", () => {
 
         contextMenuObj.remove();
-    }),    
+    }),
     new CM.HorizontalDivider(),
     new CM.Button("paste", () => {
 
